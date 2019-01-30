@@ -211,7 +211,7 @@ var EmployDetailsService = /** @class */ (function () {
         this.http = http;
     }
     EmployDetailsService.prototype.getMovies = function () {
-        return this.http.get('../assets/data.json').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (responce) { return responce.json(); }));
+        return this.http.get('./assets/data.json').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (responce) { return responce.json(); }));
     };
     EmployDetailsService.prototype.ngOnInit = function () {
         //this.rowData = this.http.get('../assets/data.json');
